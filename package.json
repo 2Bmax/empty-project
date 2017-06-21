@@ -1,0 +1,14 @@
+{
+	"name": "START-PROJECT",
+	"version": "1.0.0",
+	"main": "index.js",
+	"repository": "https://github.com/2Bmax/start-project.git",
+	"author": "2BMax",
+	"license": "MIT",
+	"scripts": {
+    	"build": "webpack --config webpack.config.js"
+	},
+	"dependencies": {
+		"webpack": "^3.0.0"
+	}
+}
