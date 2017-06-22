@@ -1,9 +1,21 @@
 var path = require('path');
 
 module.exports = {
-	entry: './src/index.js',
+	entry:{
+		index:'./src/index.js'
+	},
 	output: {
-		filename: 'bundle.js',
-		path: path.resolve(__dirname, 'dist')
+		path: path.resolve(__dirname, 'dist'),
+		filename: '[name].bundle.js'
+	},
+	module:{
+		rules:[
+			{
+				test:/\.js$/,
+				include: [
+					path.resolve(__dirname, "src")
+		        ],
+			}
+		]
 	}
 };
